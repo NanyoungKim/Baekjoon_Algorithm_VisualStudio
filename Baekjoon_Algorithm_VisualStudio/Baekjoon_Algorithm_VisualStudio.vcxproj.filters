@@ -27,5 +27,14 @@
     <ClCompile Include="코딜리티2진수.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="코딜리티사이클.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2504_괄호의값.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3111_검열.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
