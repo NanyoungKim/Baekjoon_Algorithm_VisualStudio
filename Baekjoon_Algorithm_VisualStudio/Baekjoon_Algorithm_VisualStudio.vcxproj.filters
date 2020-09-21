@@ -33,7 +33,13 @@
     <ClCompile Include="2504_괄호의값.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="3111_검열.cpp">
+    <ClCompile Include="3111_검열_array.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3111_검열_deque.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="filetest.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
