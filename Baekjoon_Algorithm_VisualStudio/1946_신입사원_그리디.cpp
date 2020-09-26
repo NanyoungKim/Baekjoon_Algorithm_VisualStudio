@@ -17,52 +17,50 @@ int main() {
 	for (int testcase = 0; testcase < T; testcase++) {
 
 		cin >> num;	//신입사원 수
+
+
+		int cnt = 0;
+
 		unordered_map<int, int> umap;
+		unordered_map<int, int> ::iterator it;
+		unordered_map<int, int> ::iterator it2;
+
+		vector<unordered_map<int, int> ::iterator> vec;
 
 		for (int i = 0; i < num; i++) {
 
-			cin >> g1 >> g2;	//서류, 면접 순위
-			int cnt = 0;
-
-			if (umap.size() == 0) {				//처음엔 그냥 넣음
-				umap.insert(pair<int, int>(g1, g2));
-			}
-
-			else {
-				unordered_map<int, int> ::iterator it;
-				unordered_map<int, int> ::iterator temp;
-
-
-
-
-				for (it = umap.begin(); it != umap.end(); it++) {
-
-					temp = it;
-					if ((it->first > g1) || (it->second > g2)) {		//새로 삽입하려는게 기존에 있던 것보다 순위 두개 중 하나라도 크면 					
-						cnt++;
-
-					}
-					if ((it->first > g1) && (it->second > g2)) {		//삭제해야함
-						umap.erase(it);
-						it = temp;
-						cnt--;
-					}
-
-				}
-				if (cnt == umap.size()) {
-					umap.insert(pair<int, int>(g1, g2));
-				}
-
-			}
+			cin >> g1 >> g2;
+			umap.insert(pair<int, int>(g1, g2));
 
 
 
 		}
+		for (it = umap.begin(); it != umap.end(); it++) {
+			vec.push_back(it);
+		}
 
-		cout << umap.size() << endl;
+
+		for (int i = 0; i < vec.size(); i++) {
+			for (int j = 0; j < vec.size(); j++) {
+				if (i != j) {
+
+					if ((vec[i]->first > vec[j]->first) && (vec[i]->second > vec[j]->second)) {  //ㅂ;교기준인 i가 둘다 j 보다 크면 : 탈락
+						vec.erase(vec.begin() + i);
+						i--;
+						break;
+					}
+
+				}
+			}
+		}
+
+
+		cout << vec.size() << endl;
+		vec.clear();
 		umap.clear();
 
 	}
+
 
 
 
