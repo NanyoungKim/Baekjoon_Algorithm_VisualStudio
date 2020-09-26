@@ -45,5 +45,20 @@
     <ClCompile Include="1946_신입사원_그리디.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="11720_숫자의합_문자열.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2577_숫자의개수_문자열.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1152_단어의개수_문자열.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="8958_OX퀴즈_문자열.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10162_전자레인지_그리디W.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

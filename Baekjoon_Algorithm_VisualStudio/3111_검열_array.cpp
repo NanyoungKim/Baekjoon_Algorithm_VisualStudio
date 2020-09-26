@@ -117,7 +117,7 @@ int main() {
 			if (last == string::npos) break;
 			else {
 				T.erase(last, A.length());
-			}*/
+#			}*/
 		}
 	}
 	
