@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <unordered_map>
+#include <map>
 
 using namespace std;
 
@@ -21,38 +21,31 @@ int main() {
 
 		int cnt = 0;
 
-		unordered_map<int, int> umap;
-		unordered_map<int, int> ::iterator it;
-		unordered_map<int, int> ::iterator it2;
+		map<int, int> umap;
+		map<int, int> ::iterator it;
+		map<int, int> ::iterator it2;
 
-		vector<unordered_map<int, int> ::iterator> vec;
+		vector<map<int, int> ::iterator> vec;
 
 		for (int i = 0; i < num; i++) {
-
 			cin >> g1 >> g2;
 			umap.insert(pair<int, int>(g1, g2));
-
-
 
 		}
 		for (it = umap.begin(); it != umap.end(); it++) {
 			vec.push_back(it);
 		}
 
+		for (int j = 0; j < vec.size()-1; j++) {
+			for (int i = j; i < vec.size() - 1; i++) {
 
-		for (int i = 0; i < vec.size(); i++) {
-			for (int j = 0; j < vec.size(); j++) {
-				if (i != j) {
-
-					if ((vec[i]->first > vec[j]->first) && (vec[i]->second > vec[j]->second)) {  //ㅂ;교기준인 i가 둘다 j 보다 크면 : 탈락
-						vec.erase(vec.begin() + i);
-						i--;
-						break;
-					}
-
+				if (vec[j]->second < vec[i + 1]->second) {
+					vec.erase(vec.begin() + i + 1);
+					i--;
 				}
 			}
 		}
+		
 
 
 		cout << vec.size() << endl;
