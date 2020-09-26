@@ -4,6 +4,11 @@
 
 using namespace std;
 
+
+int getMin(int a, int b) {
+	return a < b ? a : b;
+}
+
 int main() {
 
 
@@ -19,7 +24,7 @@ int main() {
 		cin >> num;	//신입사원 수
 
 
-		int cnt = 0;
+		int cnt = num;
 
 		map<int, int> umap;
 		map<int, int> ::iterator it;
@@ -36,19 +41,18 @@ int main() {
 			vec.push_back(it);
 		}
 
-		for (int j = 0; j < vec.size()-1; j++) {
-			for (int i = j; i < vec.size() - 1; i++) {
+		int minG2 = vec[0]->second;
 
-				if (vec[j]->second < vec[i + 1]->second) {
-					vec.erase(vec.begin() + i + 1);
-					i--;
-				}
-			}
+		for (int i = 1; i < vec.size(); i++) {
+
+			if (vec[i]->second > minG2) cnt--;
+			minG2 = getMin(minG2, vec[i]->second);
+
 		}
 		
 
 
-		cout << vec.size() << endl;
+		cout << cnt << endl;
 		vec.clear();
 		umap.clear();
 
