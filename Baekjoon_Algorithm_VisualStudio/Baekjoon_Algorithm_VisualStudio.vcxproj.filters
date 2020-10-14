@@ -60,5 +60,11 @@
     <ClCompile Include="10162_전자레인지_그리디W.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2588_곱셈.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10809알파벳찾기.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
