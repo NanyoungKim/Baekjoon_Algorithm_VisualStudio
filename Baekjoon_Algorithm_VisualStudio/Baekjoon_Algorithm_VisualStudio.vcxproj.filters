@@ -66,5 +66,14 @@
     <ClCompile Include="10809알파벳찾기.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="11721_열개씩끊어출력하기.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1157_단어공부.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1065_한수.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
