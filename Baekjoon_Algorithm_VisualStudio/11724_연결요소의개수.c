@@ -4,8 +4,10 @@
 #include <string.h>
 
 
-int **arr; 
-int *chk;
+//int **arr; 
+//int *chk;
+int arr[1001][1001];
+int chk[1001] = { 0 };
 int N, M;
 int cnt = 0;
 
@@ -31,15 +33,14 @@ int main() {
 	int node1, node2;
 	scanf("%d %d", &N, &M);
 
-	chk = malloc(sizeof(int) * (N+1));		//방문했는지 체크
-	memset(chk, 0, (N+1)* sizeof(chk));
+	//chk = malloc(sizeof(int) * (N+1));		//방문했는지 체크
+	//memset(chk, 0, (N+1)* sizeof(chk));
 
-	//for (int i = 0; i <= N; i++) printf("%d ", chk[i]);
 
-	arr = (int**)malloc(sizeof(int*) * (N+1));
+	/*arr = (int**)malloc(sizeof(int*) * (N+1));
 	for (int i = 0; i < N+1; i++) {
 		arr[i] = (int*)malloc(sizeof(int) * (N+1));
-	}
+	}*/
 
 
 	for (int i = 0; i <= N; i++) {
@@ -72,10 +73,5 @@ int main() {
 	printf("%d", cnt);
 
 
-	free(chk);
-	for (int i = 0; i <= N; i++) {
-		free(arr[i]);
-	}
-	free(arr);
 	
 }
