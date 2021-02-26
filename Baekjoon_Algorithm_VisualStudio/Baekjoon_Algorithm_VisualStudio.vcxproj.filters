@@ -75,5 +75,17 @@
     <ClCompile Include="1065_한수.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="11724_연결요소의개수.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11656_접미사배열.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="swea_등산로조성.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DP_11057_오르막수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
