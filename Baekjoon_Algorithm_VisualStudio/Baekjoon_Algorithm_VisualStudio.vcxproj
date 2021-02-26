@@ -200,7 +200,9 @@
     <ClCompile Include="8958_OX퀴즈_문자열.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="DP_11054번_가장긴바이토닉부분수열.cpp" />
+    <ClCompile Include="DP_11054번_가장긴바이토닉부분수열.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="DP_11057_오르막수.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -213,6 +215,7 @@
     <ClCompile Include="swea_등산로조성.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="TwoP_2003_수들의합2.cpp" />
     <ClCompile Include="코딜리티2진수.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
