@@ -108,5 +108,8 @@
     <ClCompile Include="SM_BOJ17143_낚시왕.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="SM_BOJ17142_연구소3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
