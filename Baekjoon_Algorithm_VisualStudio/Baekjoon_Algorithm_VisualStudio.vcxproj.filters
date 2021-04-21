@@ -105,5 +105,8 @@
     <ClCompile Include="SM_20061_모노미노도미노2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="SM_BOJ17143_낚시왕.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

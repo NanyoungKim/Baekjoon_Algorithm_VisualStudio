@@ -212,10 +212,13 @@
     <ClCompile Include="filetest.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SM_20061_모노미노도미노2.cpp" />
+    <ClCompile Include="SM_20061_모노미노도미노2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="SM_BOJ17140_이차원배열과연산.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="SM_BOJ17143_낚시왕.cpp" />
     <ClCompile Include="swea_등산로조성.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
