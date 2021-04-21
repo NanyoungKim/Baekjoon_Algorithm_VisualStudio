@@ -24,7 +24,6 @@ void spreadBFS() {
 	memset(fromStart, 0, sizeof(fromStart));
 	memset(initLoc, 0, sizeof(initLoc));
 	queue<pair<int, int>> que;
-	//vector<pair<int, int>> deadToLive;
 	int cnt = 0;
 
 	for (int i = 0; i < virusIdx.size(); i++) {	//M개
@@ -39,39 +38,32 @@ void spreadBFS() {
 		for (int i = 0; i < 4; i++) {
 			int nr = r + dr[i];
 			int nc = c + dc[i];
-			if (nr < 0 || nr >= N || nc < 0 || nc >= N ||
-				map[nr][nc]==1 || fromStart[nr][nc]!=0 || initLoc[nr][nc]==1) continue;
-			
-			
+			if (nr < 0 || nr >= N || nc < 0 || nc >= N ||		//범위 벗어나거나
+				map[nr][nc] == 1 || fromStart[nr][nc] != 0 || initLoc[nr][nc] == 1) continue;	//벽이거나, 이미 바이러스 퍼졌거나, 처음 활성바이러스 위치면 스킵
+
+			//빈칸이던 비활성바이러스이던 둘 다
 			fromStart[nr][nc] = fromStart[r][c] + 1;
 			que.push(make_pair(nr, nc));
-			if (map[nr][nc] == 0) {	//바이러스 아니고 빈칸인 경우에
-				cnt++;
-				if (maxSecond < fromStart[nr][nc]) maxSecond = fromStart[nr][nc];
+
+			//비활성 바이러스 아니고 빈칸인 경우에
+			if (map[nr][nc] == 0) {
+				cnt++;		//빈칸에서 바이러스 상태 된 칸의 수 카운트
+				if (maxSecond < fromStart[nr][nc]) maxSecond = fromStart[nr][nc];	//이 경우에만 최대로 걸린 초 고려하기
 			}
 
 		}
 
 	}
-	cout << "max : " << maxSecond << endl;
-	cout << cnt << endl;
-	for (int i = 0; i < N; i++) {
-		for (int j = 0; j < N; j++) {
-			cout << fromStart[i][j] << " ";
-		}cout << endl;
-	}
-	cout << "\n\n";
-	if(cnt == space){
-		cout <<"cnt : " << cnt << endl;
-		ansVec.push_back(maxSecond); 
+
+	if (cnt == space) {			//모든 빈칸에 다 퍼졌으면 
+		ansVec.push_back(maxSecond);
 	}
 }
 
 
-void pickDFS(int toPick, int start) {
+void pickDFS(int toPick, int start) {			//전체 바이러스 중 M개 픽
 
 	if (toPick == 0) {
-
 		spreadBFS();
 	}
 
@@ -83,12 +75,7 @@ void pickDFS(int toPick, int start) {
 			virusIdx.pop_back();
 			visited[i] = 0;
 		}
-
-
 	}
-
-
-
 }
 
 
@@ -108,7 +95,7 @@ int main() {
 
 	//initVec에서 활성상태로 만들 바이러스 M개 고르기
 	pickDFS(M, 0);
-	
+
 	if (ansVec.size() == 0) cout << -1;
 	else {
 		sort(ansVec.begin(), ansVec.end());
