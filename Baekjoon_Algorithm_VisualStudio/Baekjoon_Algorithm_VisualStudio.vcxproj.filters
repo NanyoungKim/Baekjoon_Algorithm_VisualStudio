@@ -111,5 +111,8 @@
     <ClCompile Include="SM_BOJ17142_연구소3.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="SM_BOj17779번_게리맨더링2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

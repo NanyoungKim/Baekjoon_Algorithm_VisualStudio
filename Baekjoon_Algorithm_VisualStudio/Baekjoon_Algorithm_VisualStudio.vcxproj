@@ -218,10 +218,13 @@
     <ClCompile Include="SM_BOJ17140_이차원배열과연산.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SM_BOJ17142_연구소3.cpp" />
+    <ClCompile Include="SM_BOJ17142_연구소3.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="SM_BOJ17143_낚시왕.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="SM_BOj17779번_게리맨더링2.cpp" />
     <ClCompile Include="swea_등산로조성.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
