@@ -114,5 +114,11 @@
     <ClCompile Include="SM_BOj17779번_게리맨더링2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="SM_BOJ17837_새로운게임2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SM_BOJ19236_청소년 상어.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
