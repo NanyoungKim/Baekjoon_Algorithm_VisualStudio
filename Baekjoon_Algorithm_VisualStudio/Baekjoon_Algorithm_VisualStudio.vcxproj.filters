@@ -120,5 +120,8 @@
     <ClCompile Include="SM_BOJ19236_청소년 상어.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="SM_BOJ_19237_어른 상어.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
