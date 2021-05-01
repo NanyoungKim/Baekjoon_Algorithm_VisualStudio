@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="문자열_BOJ1316_그룹단어체커.c">
+    <ClCompile Include="SM_BOJ121_8진수2진수.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="문자열_BOJ4659_비밀번호발음하기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
